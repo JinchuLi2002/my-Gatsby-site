@@ -1,0 +1,29 @@
+
+
+.div0{
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+}
+
+#jedi{
+    width: 400px;
+    float: left;
+    text-align: center;
+    background:"BB9797"
+}
+
+#sith{
+    width: 400px;
+    float: right;
+    text-align: center;
+}
+
+#searcher{
+    width: 200px;
+    display: inline-block;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    text-align: center;
+}
