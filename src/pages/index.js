@@ -3,27 +3,45 @@ import {Link} from "gatsby"
 import Header from "./components/header"
 import "./index.css"
 
+function hide(id){
+  var x = document.getElementById(id);
+  x.style.display = "none";
+}
+
+function unhide(id){
+  var x = document.getElementById(id);
+  x.style.display = "inline";
+}
+
+function findSaber(){
+  document.getElementById("jedi").style.display = "inline";
+  if (document.getElementById("light").checked){
+    hide("pickSide");
+  }
+}
+
+
 export default function Home() {
   return (
-    <div0>
+    <div>
     <h1> Lightsabers</h1> 
 
     <div id = "searcher">
       <h2>Find your dedicated lightsaber!</h2>
       <p>Choose one</p>
       <form>
-        <div id = "pick_side">
-          <label for = "light">Light Side</label>
+        <div id = "pickSide">
+          <label htmlFor = "light">Light Side</label>
           <input type = "radio" id = "light" name = "side"></input>
-          <label for = "dark">Dark Side</label>
+          <label htmlFor = "dark">Dark Side</label>
           <input type = "radio" id = "dark" name = "side"></input>
+          <button onClick={findSaber}>next</button>
         </div>
-      <input type = "submit"></input>
       </form>
       <a href = "#jedi">go to</a>
     </div>
 
-    <div id = "jedi">
+    <div id = "jedi" style = {{display: "none"}}>
       <h2  style = {{color : 'CornflowerBlue'}}>
       Jedi</h2>
         <h3>Grand Masters</h3>
@@ -45,7 +63,7 @@ export default function Home() {
             width = "362" height = "220" />
         </a>
       </div>
-    <div id = "sith">
+    <div id = "sith" style = {{display: "none"}}>
     <h2  style = {{color : 'Red'}}>
       Sith</h2>
       <h3>Sith Lord</h3>
@@ -70,6 +88,7 @@ export default function Home() {
           </a>
     <br/><Link to="/contact/">Contact</Link>
     </div>
-    </div0>
+    </div>
   )
 }
+
