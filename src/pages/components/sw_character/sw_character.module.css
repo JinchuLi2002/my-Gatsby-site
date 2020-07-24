@@ -1,0 +1,29 @@
+.description{
+    
+}
+
+.name{
+    font-family: "fantasy", fantasy;
+  
+}
+
+.character{
+  
+}
+
+.characterImg{
+    max-width: 360px;
+    width: auto;
+    height: auto;
+}
+
+.saberImg{
+    max-width: 360px;
+    width: auto;
+    height: auto;
+}
+
+.excerpt {
+    
+    font-family: "cursive", cursive;
+  }
