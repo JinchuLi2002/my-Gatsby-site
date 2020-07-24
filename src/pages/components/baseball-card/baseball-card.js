@@ -1,17 +1,15 @@
 
-import "../container/container.js"
 import React from "react"
+import styles from './baseball-card.module.css'
 
+const BaseballCard = (props) => {
+	let { placeholderText } = props;
 
-const Card = (props) => {
-	const style = {
-		
-	}
 	return(
-		<div>
- 			
+		<div className={styles.baseballCard}>
+ 			{placeholderText}
  		</div>
 	);
 }
 
-export default Card
+export default BaseballCard
