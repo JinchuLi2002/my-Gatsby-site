@@ -25,31 +25,7 @@ module.exports = {
 
     // Prefer Gatsby ES6 entrypoint (module) over commonjs (main) entrypoint
     config.resolve.mainFields = ["browser", "module", "main"];
-  //   config.module.rules.push(
-  //       {
-  //         test: /\.css$/,
-  //         use: [
-  //           {
-  //             loader: 'style-loader',
-  //           },
-  //           {
-  //             loader: 'css-loader',
-  //             options: {
-  //               sourceMap: true,
-  //             },
-  //           },
-  //         ],
-  //       })
-  //
+    
     return config;
   },
 };
-
-
-
-// const path = require('path');
-
-// // Export a function. Accept the base config as the only param.
-// module.exports = {
-
-// };
