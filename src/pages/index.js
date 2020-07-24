@@ -2,6 +2,7 @@ import React from "react"
 import {Link} from "gatsby"
 import Header from "./components/header"
 import "./index.css"
+import BaseballCard from "./components/baseball-card/baseball-card"
 
 function hide(id){
   var x = document.getElementById(id);
@@ -24,8 +25,7 @@ function findSaber(){
 export default function Home() {
   return (
     <div>
-    <h1> Lightsabers</h1> 
-
+    <h1> Lightsabers</h1><BaseballCard placeholderText={'blahblah'}/>
     <div id = "searcher">
       <h2>Find your dedicated lightsaber!</h2>
       <p>Choose one</p>
